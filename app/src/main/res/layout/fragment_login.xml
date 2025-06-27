@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:paddingTop="60dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    tools:context=".LoginFragment">
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAÇA SEU LOGIN"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Observação: Caso não tenha uma conta, basta inserir
+um nome e uma senha que será sua nova conta:"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="EMAIL"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu email"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="SENHA"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite sua senha"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Conectar"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
