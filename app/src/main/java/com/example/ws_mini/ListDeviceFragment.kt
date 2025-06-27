@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.core.os.bundleOf
 
 class ListDeviceFragment : Fragment() {
 
@@ -18,6 +19,18 @@ class ListDeviceFragment : Fragment() {
         val btnSelecionar = view.findViewById<Button>(R.id.btnSelecionar)
 
         btnSelecionar.setOnClickListener {
+            parentFragmentManager.setFragmentResult("resultado_dispositivo", bundleOf(
+                "dispositivo" to "Output:\n" +
+                        "Provided altitude: XXmeters XXfeet\n" +
+                        "Absolute pressure: XXmb XXinHg\n" +
+                        "Relative pressure: XXmb XXinHg\n" +
+                        "Computed altitude: XXmeters XXfeet\n" +
+                        "Temperature: x°C xF°\n" +
+                        "Humidity: X%\n" +
+                        "Rain: No\n" +
+                        "Intensity: ----(None)"
+            ))
+
             Toast.makeText(requireContext(), "Dispositivo selecionado", Toast.LENGTH_SHORT).show()
             parentFragmentManager.popBackStack() // volta para ConectarFragment
         }
